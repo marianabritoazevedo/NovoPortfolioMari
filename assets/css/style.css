@@ -1,0 +1,276 @@
+/*Geral*/
+body, html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Karla', sans-serif;
+}
+
+/*Menu desktop*/
+.menu-mobile{
+    display: none;
+}
+
+body {
+    position: relative;
+}
+
+.menu-desktop{
+    position: fixed;
+    left: 30px;
+    top: 100px;
+    z-index: 999;
+}
+
+.menu-desktop a{
+    text-decoration: none;
+}
+
+.circle-menu{
+    background-color: #f1f1f1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4362b1;
+    transition: 0.3s;
+}
+
+.circle-menu:hover{
+    background-color: #4362b1;
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+
+/*Menu mobile*/
+/* Change navbar styling on small viewports */
+@media (max-width: 768px) {
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: inline-block !important;
+    }
+    
+    .navbar {
+        background: #4362B1;
+        padding: 10px !important;
+    }
+
+    .navbar li{
+        border-bottom: 1px solid rgba(242,241,235, 0.2);
+    }
+
+    .navbar li:last-child{
+        border-bottom: none;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #f2f1eb;
+    }
+
+    .menu-mobile button:focus{
+        outline: 1px solid #fff;
+    }
+
+}
+
+/*inicio*/
+.inicio{
+    background-image: url(../img/bg-inicio.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*height: 1000px;*/
+}
+
+.container-inicio{
+    padding-top: 50px;
+}
+
+.inicio h1{
+    color: #f1f1f1;
+}
+
+.icones-inicio{
+    padding-bottom: 50px;
+}
+
+.icones-inicio a{
+    text-decoration: none;
+    color: #f1f1f1;
+    width: 20px;
+    height: 20px;
+}
+
+/*Sobre mim*/
+
+.titulo-secao h2{
+    font-weight: 500;
+}
+
+.titulo-secao div{
+    width: 120px;
+    height: 5px;
+    background-color: #4362b1;
+}
+
+
+.foto-mari img{
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.5);
+}
+
+.container-infos{
+    border: 2px solid #4362B1;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+}
+
+
+.botoes-curriculos button{
+    background-color: #4362B1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.botoes-curriculos button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 1px rgba(67, 98, 177, 0.4);
+}
+
+.botoes-curriculos img{
+    width: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .foto-mari img{
+        border-radius: 10px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .colunas-botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .botoes-curriculos button{
+        margin-bottom: 20px;
+        justify-content: center;
+        width: 250px;
+        margin-right: 0 !important;
+    }
+    .foto-alan img{
+        border-radius: 5px;
+        width: 100%
+    }
+}
+
+/*Formação*/
+
+.container-anos{
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.container-anos h5{
+    margin: 0;
+}
+
+.container-titulo-formacao h5{
+    color: #4362b1;
+    font-weight: bold;
+    margin: 0;
+}
+
+.container-titulo-formacao button{
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.container-titulo-formacao i:focus{
+    --fa-rotate-angle: 180dg;
+}
+
+/*Habilidades*/
+.card-habilidade{
+    border-radius: 10px;
+    border: 2px solid #4362b1;
+    color: #4362b1;
+    transition: 0.3s;
+}
+
+.card-habilidade:hover{
+    color: #f1f1f1;
+    background-color: rgba(67, 98, 177, 0.8);
+    transition: 0.3s;
+}
+
+.card-habilidade h6:hover{
+    cursor: pointer;
+}
+
+.texto-menor{
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .texto-menor{
+        display: inline-block !important;
+    }
+    .texto-maior{
+        display: none;
+    }
+}
+
+.modal-header{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.modal button{
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 330px) {
+    .habilidades .ciencia-dados h4{
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+}
+
+/*Portfólio*/
+.card-portfolio{
+    color: #f1f1f1;
+    position: relative;
+}
+
+.card-portfolio img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.hover-portfolio{
+    position: absolute;
+    top: 50%;                       
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(67, 98, 177, 0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
