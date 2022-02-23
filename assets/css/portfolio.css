@@ -17,7 +17,7 @@ nav a{
 }
 
 form button{
-    margin-left: -32px;
+    margin-left: -32px !important;
     background-color: #fff;
     outline: none;
     border: none;
