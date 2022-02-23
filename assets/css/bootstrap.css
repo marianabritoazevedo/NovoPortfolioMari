@@ -2342,6 +2342,7 @@ textarea.form-control {
 
 .form-inline {
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
