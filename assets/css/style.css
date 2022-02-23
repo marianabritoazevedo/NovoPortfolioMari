@@ -17,7 +17,7 @@ body {
 
 .menu-desktop{
     position: fixed;
-    left: 30px;
+    left: 20px;
     top: 100px;
     z-index: 999;
 }
@@ -42,33 +42,46 @@ body {
 }
 
 /*Menu mobile*/
-/* Change navbar styling on small viewports */
-@media (max-width: 768px) {
+
+@media (max-width: 1100px){
     .menu-desktop{
         display: none;
     }
-
     .menu-mobile{
         display: inline-block !important;
     }
-    
     .navbar {
         background: #4362B1;
         padding: 10px !important;
     }
-
-    .navbar li{
-        border-bottom: 1px solid rgba(242,241,235, 0.2);
-    }
-
-    .navbar li:last-child{
-        border-bottom: none;
-    }
-
     .navbar .navbar-brand, .navbar .nav-link {
         color: #f2f1eb;
     }
+    .menu-mobile button:focus{
+        outline: none;
+    }    
+}
 
+@media (max-width: 768px) {
+    .menu-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: inline-block !important;
+    }
+    .navbar {
+        background: #4362B1;
+        padding: 10px !important;
+    }
+    .navbar li{
+        border-bottom: 1px solid rgba(242,241,235, 0.2);
+    }
+    .navbar li:last-child{
+        border-bottom: none;
+    }
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #f2f1eb;
+    }
     .menu-mobile button:focus{
         outline: none;
     }
